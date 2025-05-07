@@ -84,10 +84,10 @@ while game_is_on:
         if b.check_collision_with_ship(ship):
             game_over_writer = turtle.Turtle()
             game_over_writer.hideturtle()
-            game_over_writer.color("red")
+            game_over_writer.color("white")
             game_over_writer.penup()
             game_over_writer.goto(0, 0)
-            game_over_writer.write("GAME OVER", align="center", font=("Arial", 32, "bold"))
+            game_over_writer.write("GAME OVER", align="center", font=("Arial", 20, "bold"))
             time.sleep(2)
             game_is_on = False
 
