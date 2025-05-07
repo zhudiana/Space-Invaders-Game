@@ -19,10 +19,11 @@ class Bullet(Turtle):
 
     def move(self):
         if self.is_fired:
-            self.sety(self.ycor() + 10)
+            self.sety(self.ycor() + 60)
             # Check if bullet is off-screen
             if self.ycor() > 250:
                 self.reset_position()
+
 
     def reset_position(self):
         self.goto(0, -175)

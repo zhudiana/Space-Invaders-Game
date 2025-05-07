@@ -3,7 +3,7 @@ from turtle import Turtle, Screen
 class Ship(Turtle):
     def __init__(self):
         super().__init__()
-        self.shape("rocket_ship.gif")
+        self.shape("assets/rocket_ship.gif")
         self.penup()
         self.goto(0, -200)
         self.move_left = False
